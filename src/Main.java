@@ -5,6 +5,7 @@ import Name.Name;
 import PizzaOrderSystem.Pizza;
 import PizzaOrderSystem.PizzaSize;
 import PizzaOrderSystem.Toppings;
+import TaskPrioritizer.TaskPrioritizer;
 
 import java.util.List;
 import java.util.Scanner;
@@ -29,6 +30,8 @@ public class Main {
 
         Pizza pizza = new Pizza(PizzaSize.MEDIUM, List.of(Toppings.CHEESE, Toppings.PEPPERONI));
         System.out.println("Total Price: $" + pizza.calculatePrice());
+
+
 
 
 
