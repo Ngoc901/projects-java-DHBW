@@ -2,7 +2,11 @@ import AirQualityProject.AirQuality;
 import Matrices.MatrixOperations;
 import Matrices.MatrixShapes;
 import Name.Name;
+import PizzaOrderSystem.Pizza;
+import PizzaOrderSystem.PizzaSize;
+import PizzaOrderSystem.Toppings;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -22,6 +26,9 @@ public class Main {
         MatrixOperations.matrixMultiplication();
         MatrixOperations.matrixTranspose();
         System.out.println("-------------");*/
+
+        Pizza pizza = new Pizza(PizzaSize.MEDIUM, List.of(Toppings.CHEESE, Toppings.PEPPERONI));
+        System.out.println("Total Price: $" + pizza.calculatePrice());
 
 
 
