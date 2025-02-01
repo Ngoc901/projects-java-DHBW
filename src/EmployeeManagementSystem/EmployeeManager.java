@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class EmployeeManager {
+/*public class EmployeeManager {
     HashMap<Integer, Employee> employees = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
 
@@ -121,3 +121,4 @@ public class EmployeeManager {
         }
     }
 }
+*/

@@ -2,9 +2,9 @@ import AirQualityProject.AirQuality;
 import Matrices.MatrixOperations;
 import Matrices.MatrixShapes;
 import Name.Name;
-import PizzaOrderSystem.Pizza;
-import PizzaOrderSystem.PizzaSize;
-import PizzaOrderSystem.Toppings;
+//import PizzaOrderSystem.Pizza;
+//import PizzaOrderSystem.PizzaSize;
+//import PizzaOrderSystem.Toppings;
 import TaskPrioritizer.TaskPrioritizer;
 
 import java.util.List;
@@ -28,8 +28,10 @@ public class Main {
         MatrixOperations.matrixTranspose();
         System.out.println("-------------");*/
 
-        Pizza pizza = new Pizza(PizzaSize.MEDIUM, List.of(Toppings.CHEESE, Toppings.PEPPERONI));
-        System.out.println("Total Price: $" + pizza.calculatePrice());
+        /*Pizza pizza = new Pizza(PizzaSize.MEDIUM, List.of(Toppings.CHEESE, Toppings.PEPPERONI));
+        System.out.println("Total Price: $" + pizza.calculatePrice());*/
+
+
 
 
 
