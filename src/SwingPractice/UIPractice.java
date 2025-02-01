@@ -3,6 +3,8 @@ package SwingPractice;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.FlowLayout;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class UIPractice {
 
@@ -25,6 +27,7 @@ public class UIPractice {
 
            JButton b = new JButton("Submit");
            f.add(b);
+
 
 
 
