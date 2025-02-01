@@ -1,3 +1,5 @@
+package SwingPractice;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.FlowLayout;
@@ -5,11 +7,12 @@ import java.awt.FlowLayout;
 public class UIPractice {
 
         public static void main(String[] args) {
-           JFrame f = new JFrame("User Form");
-           f.setVisible(true);
-           f.setSize(400, 400);
-           f.setLayout(new FlowLayout());
-           f.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+
+           JFrame f = new MyFrame();
+           f.setTitle("User Form");
+           ImageIcon image = new ImageIcon("assets/images/back.jpg");
+           f.setIconImage((image.getImage()));
+           f.getContentPane().setBackground(Color.white);
 
            JLabel l1 = new JLabel("Username:");
            f.add(l1);
@@ -22,6 +25,12 @@ public class UIPractice {
 
            JButton b = new JButton("Submit");
            f.add(b);
+
+
+
+
+
+           f.pack(); // resize according to components
 
         }
 }
