@@ -30,7 +30,7 @@ public class SwitchCard {
                     // Change icon with a delay using Swing Timer
                     btnNewButton.setIcon(new ImageIcon("assets/images/back.jpg"));
 
-                    new Timer(2, new ActionListener() {
+                    new Timer(1, new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             btnNewButton.setIcon(new ImageIcon("assets/images/darkness.jpg"));
