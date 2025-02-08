@@ -175,8 +175,5 @@ public class Calculator extends JFrame implements ActionListener {
            temp*=-1;
            textfield.setText(String.valueOf(temp));
         }
-
-
-
     }
 }
