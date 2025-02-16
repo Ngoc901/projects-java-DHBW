@@ -52,6 +52,8 @@ public class Algorithms {
         return -1;
     }
 
+    //quick sort
+
     public static void quicksort(int[] arr, int start, int end) {
 
         if(arr != null && arr.length <= 1) {
@@ -85,5 +87,53 @@ public class Algorithms {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
+    public static void bubble_sort(int arr[]) {
+
+        int n = arr.length;
+
+        // Loop for each pass
+        for (int i = 0; i < n - 1; i++) {
+            // Loop to iterate over each element in each pass
+            for (int j = 0; j < n - i - 1; j++) {
+
+                // compare two adjacent elements, if swapping is required then do so
+                if (arr[j] > arr[j + 1]) {
+
+                    // swap both elements using temp variable
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    void selection_sort(int arr[]) {
+        int n = arr.length;
+
+
+        //  Loop for each iteration
+        for (int i = 0; i < n - 1; i++) {
+            int min_idx = i;
+
+
+            // Loop to find index of minimum element for ith index in each iteration
+            for (int j = i + 1; j < n; j++) {
+
+                // Check for the minimum element in each iteration.
+                if (arr[j] < arr[min_idx]) {
+                    min_idx = j;
+                }
+            }
+
+            // put that minimum element at ith index using temp variable
+            int temp = arr[i];
+            arr[i] = arr[min_idx];
+            arr[min_idx] = temp;
+        }
+    }
+
+
 
 }
